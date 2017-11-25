@@ -30,11 +30,5 @@ colormiss
 oridata$item_color[is.na(oridata$item_color)==T]<-names(table(oridata$item_color))[table(oridata$item_color)==max(table(oridata$item_color))]
 summary(oridata$item_color)
 sort(table(oridata$item_color))
-#deal with user date
-summary(oridata$user_state)
-table(oridata$user_state)
-summary(known$user_state)
-table(known$user_state)
-table(known$user_state, known$return)
 
-table(oridata$item_price)
+
